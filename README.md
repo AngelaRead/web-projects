@@ -1,5 +1,5 @@
    # Practice Website
    
-   Live site: https://yourusername.github.io/repo-name/practice.html
+   Live site: https://angelaread.github.io/web-projects/Practice.html
    
    A practice HTML page from my freeCodeCamp learning.
