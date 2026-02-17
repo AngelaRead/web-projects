@@ -1,5 +1,6 @@
    # Practice Website
-   
-   Live site: https://angelaread.github.io/web-projects/Practice.html
-   
-   A practice HTML page from my freeCodeCamp learning.
+
+## Live Sites
+
+- [Practice HTML](https://angelaread.github.io/web-projects/Practice.html) — A practice HTML page from my freeCodeCamp learning.
+- [Ship Bottom NJ Project](https://angelaread.github.io/web-projects/practice-mp4-video.html) — Practice embedding MP4 video using Cloudinary.
