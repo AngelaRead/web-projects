@@ -8,3 +8,4 @@
 - [Yoga Retreats](https://angelaread.github.io/web-projects/practice-semantic.html) — Practice semantic HTML elements.
 - [Book Catalog Table](https://angelaread.github.io/web-projects/practice-tables.html) — Practice building HTML tables using a curated list of architecture and design books.
 - [Mobile App UX Survey Form](https://angelaread.github.io/web-projects/practice-survey.html) — Practice building HTML forms with inputs, dropdowns, radio buttons, and checkboxes.
+- [Checkout Page](https://angelaread.github.io/web-projects/practice-checkout-page.html) — Practice building a checkout page with accessible form inputs and payment fields.
