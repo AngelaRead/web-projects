@@ -1,0 +1,11 @@
+a{text-decoration: none;}
+a:link{color:darkmagenta}
+a:visited{color:blueviolet}
+a:hover{color:darkred}
+a:focus{color: black; outline: 1px solid black;}
+a:active{color:aquamarine}
+.sub-item{width: 200px;background-color:rgb(199, 235, 235);text-align:center; padding-right:50px; margin-right: auto; margin-left: auto; margin-top:10px}
+.todo-item{width: 300px;height: 80px;background-color:rgb(199, 235, 235);margin-top: 15px;text-align:left;  margin-right: auto; margin-left: auto; list-style-position: inside; padding-top:30px; padding-left:50px}
+h1{text-align:center; font-family:Arial, Helvetica, sans-serif}
+.todo-list{font-family:Arial, Helvetica, sans-serif;list-style: none;}
+.sub-item,.todo-item{border-radius:20px}
