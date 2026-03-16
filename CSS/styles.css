@@ -1,0 +1,13 @@
+body{background-color:cadetblue; font-family:Arial, sans-serif}
+.business-card {width: 300px;background-color:azure; padding: 20px; margin-top: 100px; text-align: center;font-size: 16px; margin-left: auto; margin-right: auto; border: 5px ridge darkgrey;}
+.profile-image {max-width:100%; border: 2px solid black;}
+.social-media {width: 250px; background-color:azure; padding: 20px;}
+.full-name {font-size: 35px; color:teal}
+.designation {font-size: 20px; color:darkslategrey}
+.company {color:gray; font-weight:800; font-size: 18px;}
+.email{font-weight:700;}
+.email-address{font-size: 15px;}
+.phone{font-weight:700;}
+.phone-number{font-size: 15px;}
+p{margin: 5px 0} 
+a{text-decoration: none;}
