@@ -12,4 +12,4 @@
 - [Multimedia Player](https://angelaread.github.io/web-projects/HTML/practice-multimedia-player.html) — Practice embedding audio and video with captions and accessibility attributes.
 
 ## CSS
-*Coming soon*
+- [Business Card](https://angelaread.github.io/web-projects/CSS/practice-business-card.html) — Practice CSS styling including selectors, colors, typography, borders, spacing, and linking an external stylesheet.
