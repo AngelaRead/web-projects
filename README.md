@@ -13,3 +13,4 @@
 
 ## CSS
 - [Business Card](https://angelaread.github.io/web-projects/CSS/practice-business-card.html) — Practice CSS styling including selectors, colors, typography, borders, spacing, and linking an external stylesheet.
+- [Stylized To-Do List](https://angelaread.github.io/web-projects/CSS/todo-list/practice-to-do-list.html) — Practice CSS pseudo-classes for link states including hover, focus, active, and visited.
