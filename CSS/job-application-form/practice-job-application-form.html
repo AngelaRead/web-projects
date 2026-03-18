@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h1>Design Technology Role Application</h1>
+        <p>
+        <label for="name"><strong>Name: </strong></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </p>
+        <p>
+        <label for="email"><strong>Email: </strong></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+        <label for="position"><strong>Position: </strong></label>
+        <select id="position" name="position" required>
+            <option value="select">Select an position</option>
+            <option value="design-technologist">Design Technologist</option>
+            <option value="ux-engineer">UX Engineer</option>
+            <option value="design-engineer">Design Engineer</option>
+            <option value="front-end-developer">Front-End Developer</option>
+            <option value="product-designer">Product Designer</option>
+        </select>
+        </p>
+        <fieldset class="radio-group">
+            <legend><strong>Availability</strong></legend>
+            <input type="radio" name="availability" id="full-time">
+            <label for="full-time">Full Time</label>
+            <input type="radio" name="availability" id="part-time">
+            <label for="part-time">Part Time</label>
+        </fieldset>
+        <p><label for="message">Why do you want to work in the tech industry?</label></p>
+        <textarea cols="30" rows="10" name="motivation" id="message" placeholder="Write your motivation"></textarea>
+        <p><button type="submit" id="submit">Submit Application</button></p>
+    </form>
+    </div>
+</body>
+</html>
