@@ -12,6 +12,7 @@
 - [Multimedia Player](https://angelaread.github.io/web-projects/HTML/practice-multimedia-player.html) — Practice embedding audio and video with captions and accessibility attributes.
 
 ## CSS
-- [Business Card](https://angelaread.github.io/web-projects/CSS/practice-business-card.html) — Practice CSS styling including selectors, colors, typography, borders, spacing, and linking an external stylesheet.
+- [Business Card](https://angelaread.github.io/web-projects/CSS/business-card/practice-business-card.html) — Practice CSS styling including selectors, colors, typography, borders, spacing, and linking an external stylesheet.
 - [Stylized To-Do List](https://angelaread.github.io/web-projects/CSS/todo-list/practice-to-do-list.html) — Practice CSS pseudo-classes for link states including hover, focus, active, and visited.
 - [Blog Post Card](https://angelaread.github.io/web-projects/CSS/blog-post-card/practice-blog-post-card.html) — Practice CSS backgrounds, borders, border-radius, box-shadow, and hover effects.
+- [Event Flyer Page](https://angelaread.github.io/web-projects/CSS/event-flyer-page/practice-event-flyer-page.html) — Practice CSS layout using flexbox, viewport units, and the calc function.
