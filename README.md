@@ -17,3 +17,4 @@
 - [Blog Post Card](https://angelaread.github.io/web-projects/CSS/blog-post-card/practice-blog-post-card.html) — Practice CSS backgrounds, borders, border-radius, box-shadow, and hover effects.
 - [Event Flyer Page](https://angelaread.github.io/web-projects/CSS/event-flyer-page/practice-event-flyer-page.html) — Practice CSS layout using flexbox, viewport units, and the calc function.
 - [Job Application Form](https://angelaread.github.io/web-projects/CSS/job-application-form/practice-job-application-form.html) — Practice CSS pseudo-classes including focus, valid, invalid, checked, hover, and first-of-type.
+- [Boho Colored Boxes](https://angelaread.github.io/web-projects/CSS/set-of-colored-boxes/practice-set-of-colored-boxes.html) — Practice CSS color formats including hexadecimal, RGB, HSL, and predefined color values.
