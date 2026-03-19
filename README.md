@@ -16,3 +16,4 @@
 - [Stylized To-Do List](https://angelaread.github.io/web-projects/CSS/todo-list/practice-to-do-list.html) — Practice CSS pseudo-classes for link states including hover, focus, active, and visited.
 - [Blog Post Card](https://angelaread.github.io/web-projects/CSS/blog-post-card/practice-blog-post-card.html) — Practice CSS backgrounds, borders, border-radius, box-shadow, and hover effects.
 - [Event Flyer Page](https://angelaread.github.io/web-projects/CSS/event-flyer-page/practice-event-flyer-page.html) — Practice CSS layout using flexbox, viewport units, and the calc function.
+- [Job Application Form](https://angelaread.github.io/web-projects/CSS/job-application-form/practice-job-application-form.html) — Practice CSS pseudo-classes including focus, valid, invalid, checked, hover, and first-of-type.
