@@ -19,3 +19,4 @@
 - [Job Application Form](https://angelaread.github.io/web-projects/CSS/job-application-form/practice-job-application-form.html) — Practice CSS pseudo-classes including focus, valid, invalid, checked, hover, and first-of-type.
 - [Boho Colored Boxes](https://angelaread.github.io/web-projects/CSS/set-of-colored-boxes/practice-set-of-colored-boxes.html) — Practice CSS color formats including hexadecimal, RGB, HSL, and predefined color values.
 - [Contact Form](https://angelaread.github.io/web-projects/CSS/contact-form/practice-contact-form.html) — Practice CSS form styling including border-radius, padding, hover effects, and label formatting.
+- [Feature Selection Page](https://angelaread.github.io/web-projects/CSS/feature-selection/practice-feature-selection.html) — Practice CSS custom checkboxes, pseudo-elements, the :has() selector, and flexbox card layouts.
