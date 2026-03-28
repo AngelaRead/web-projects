@@ -1,0 +1,40 @@
+.form-container{background-color:white;
+                width: 400px; 
+                border-radius: 15px;
+                padding: 40px 10px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                border: 3px solid black;}
+
+label{margin-top: 10px;
+    margin-bottom:20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;}
+
+input{width: 250px;
+    padding: 3px;
+    margin-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;}
+
+textarea{width: 220px;
+        padding: 20px;
+        margin-bottom: 10px;}
+
+button{background-color:rgb(156, 201, 156);
+        font-size: 15px;}
+
+button:hover{background-color:rgb(120, 120, 202);}
+
+body{background-color:lightskyblue;
+    margin-left:auto; 
+    margin-right: auto;}
+
+h2{font-family:'Courier New', Courier, monospace;}
+
+
