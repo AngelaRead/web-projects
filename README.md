@@ -22,3 +22,4 @@
 - [Feature Selection Page](https://angelaread.github.io/web-projects/CSS/feature-selection/practice-feature-selection.html) — Practice CSS custom checkboxes, pseudo-elements, the :has() selector, and flexbox card layouts.
 - [Pricing Plans Layout](https://angelaread.github.io/web-projects/CSS/pricing-plans-layout/practice-pricing-plans-layout.html) — Practice CSS flexbox layout including flex-wrap, flex-grow, order, flex shorthand, and transform hover effects.
 - [Page of Playing Cards](https://angelaread.github.io/web-projects/CSS/page-of-playing-cards/page-of-playing-cards.html) — Practice CSS flexbox alignment including align-self, flex-direction, transform rotation, and hover effects.
+- [Newspaper Article](https://angelaread.github.io/web-projects/CSS/newspaper-article/practice-newspaper-article.html) — Practice CSS typography including rem, em units, text-transform, font-weight, font-style, and the ::first-letter pseudo-element.
