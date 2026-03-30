@@ -1,0 +1,74 @@
+.newspaper-layout{display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto 1fr 1fr 1fr;
+                grid-template-areas: 
+                "title title title" 
+                "feature-article feature-article cover-image" 
+                "secondary-article secondary-article cover-image"
+                "small-article1 small-article2 small-article3";
+                gap: 10px;
+                font-family:'Times New Roman', Times, serif;
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;}
+
+.title{grid-area: title;}
+
+.feature-article{grid-area: feature-article;
+                text-align: justify;
+                background-color: rgb(240, 240, 245);
+                padding: 15px;
+                border: 1px solid #ccc }
+
+.secondary-article{grid-area: secondary-article;
+                text-align: justify;
+                background-color: rgb(240, 240, 245);
+                padding: 15px;
+                border: 1px solid #ccc }
+
+.small-article1{grid-area: small-article1;
+                text-align: justify;
+                background-color: rgb(240, 240, 245);
+                padding: 15px; 
+                border: 1px solid #ccc}
+
+.small-article2{grid-area: small-article2;
+                text-align: justify;
+                background-color: rgb(240, 240, 245);
+                padding: 15px;
+                border: 1px solid #ccc }
+
+.small-article3{grid-area: small-article3;
+                text-align: justify;
+                background-color: rgb(240, 240, 245);
+                padding: 15px;
+                border: 1px solid #ccc }
+
+.cover-image {grid-area: cover-image;
+            background-color: rgb(189, 189, 200);
+            margin: 0px;
+            padding: 15px;
+            border: 1px solid #ccc}
+
+.cover-image img {max-width: 100%;
+                margin-top: 150px;
+                border-radius: 10px;}
+
+h1{text-align: center;
+    padding: 20px;
+    font-size: 65px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgb(46, 46, 63);}
+
+h2, h3 {border-bottom: 1px solid black;}
+
+.date-volume{justify-content: space-between;
+            display: flex;
+            margin-top: -10px;
+            background-color: rgb(58, 58, 79);
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;}
+
+body{background-color:#f9f7f7}
