@@ -24,3 +24,4 @@
 - [Page of Playing Cards](https://angelaread.github.io/web-projects/CSS/page-of-playing-cards/page-of-playing-cards.html) — Practice CSS flexbox alignment including align-self, flex-direction, transform rotation, and hover effects.
 - [Newspaper Article](https://angelaread.github.io/web-projects/CSS/newspaper-article/practice-newspaper-article.html) — Practice CSS typography including rem, em units, text-transform, font-weight, font-style, and the ::first-letter pseudo-element.
 - [Tribute Page](https://angelaread.github.io/web-projects/CSS/tribute-page/practice-tribute-page.html) — Practice CSS layout and styling while building a tribute page for Grace Hopper, pioneer of computer programming.
+- [Newspaper Layout](https://angelaread.github.io/web-projects/CSS/newspaper-layout/practice-newspaper-layout.html) — Practice CSS Grid layout including grid-template-areas, grid-template-columns, grid-template-rows, and grid-area properties.
