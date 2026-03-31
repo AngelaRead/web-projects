@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <nav id="navbar">
+        <div class="header-nav">
+        <header>Architecture & Design Systems</header>
+        </div>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Typography">Typography</a>
+        <a class="nav-link" href="#Color_Tokens">Color Tokens</a>
+        <a class="nav-link" href="#Spacing_and_Grid">Spacing and Grid</a>
+        <a class="nav-link" href="#Components">Components</a>
+        <a class="nav-link" href="#Iconography">Iconography</a>
+        <a class="nav-link" href="#Elevations_and_Shadow">Elevations and Shadow</a>
+        <a class="nav-link" href="#Border_and_Radius">Border and Radius</a>
+        <a class="nav-link" href="#Motion_and_Animation">Motion and Animation</a>
+        <a class="nav-link" href="#Accessibility">Accessibility</a>
+        <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+        <a class="nav-link" href="#Dark_Mode_Tokens">Dark Mode Tokens</a>
+        <a class="nav-link" href="#Design_Handoff">Design Handoff</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>A design system is a collection of reusable components, guidelines, and standards that help teams build consistent and scalable products. It serves as a single source of truth for both designers and developers, eliminating guesswork and reducing inconsistency across a product.</p>
+            <p>In architecture, design systems have long existed as building codes, material standards, and spatial guidelines. The same principles now apply to digital product design — a well-documented system ensures that every element, from a button to a full page layout, follows deliberate and repeatable rules.</p>
+            <p>Design systems are not just style guides. They include design tokens, component libraries, usage documentation, accessibility standards, and governance processes. When properly maintained, they dramatically accelerate product development and improve quality.</p>
+            <p>The relationship between architecture and digital design systems is more than metaphorical. Both disciplines require systems thinking — the ability to see how individual parts relate to the whole, and how changes to one element ripple through the entire structure.</p>
+            <code>design-system: components + guidlines + standards + tokens</code>
+            <ul>
+                <li>Components</li>
+                <li>Guidlines</li>
+                <li>Design Tokens</li>
+                <li>Accessiblity Standards</li>
+                <li>Goverance Documentation</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Typography">
+            <header>Typography</header>
+            <p>Typography is the foundation of visual communication in any design system. It establishes hierarchy, readability, and brand voice across all touchpoints — from marketing pages to complex data dashboards.</p>
+            <p>A well-defined type scale ensures consistent sizing relationships throughout a product. Most design systems use a modular scale based on a ratio such as 1.25 or 1.5, creating a harmonious progression from the smallest label to the largest display heading.</p>
+            <p>Font families should be limited to two at most — one for headings and one for body text. Using more than two typefaces creates visual noise and slows down page rendering due to additional font loading.</p>
+            <p>Line height, letter spacing, and paragraph spacing are just as important as font size. These properties determine readability at scale and should be tokenized for consistent application across all components.</p>
+            <code>--font-size-base: 16px / --line-height-body: 1.5 / --font-weight-bold: 700</code>
+            <ul>
+                <li>Display</li>
+                <li>Heading 1</li>
+                <li>Heading 2</li>
+                <li>Body regular</li>
+                <li>Body Small</li>
+                <li>Caption</li>
+                <li>Label</li>
+                <li>Overline</li>
+            </ul> 
+        </section>
+        <section class="main-section" id="Color_Tokens">
+            <header>Color Tokens</header>
+            <p>Color tokens are named variables that store color values. They allow teams to update colors globally without manually changing every instance across a codebase. A single token update can propagate changes across hundreds of components instantly.</p>
+            <p>Tokens are organized into three tiers. Global tokens define the raw color palette — every color available in the system. Semantic tokens assign meaning to global tokens, such as assigning a global blue to the role of primary action color. Component tokens reference semantic tokens for specific component-level use cases.</p>
+            <p>Color contrast is a critical consideration when defining tokens. Every color pairing used for text and background must meet WCAG 2.1 AA contrast requirements at minimum, with AAA compliance recommended for body text.</p>
+            <p>Dark mode support is built into a token-based color system from the start. By referencing semantic tokens rather than raw hex values, components automatically adapt when the token values are swapped for their dark mode equivalents.</p>
+            <code>--color-primary: #3a86ff / --color-error: #e63946 / --color-success: #2a9d8f</code>
+            <ul>
+                <li>Primary</li>
+                <li>Secondary</li>
+                <li>Neutral Error</li>
+                <li>Warning</li>
+                <li>Success</li>
+                <li>Info</li>
+                <li>Overlay</li>
+            </ul>
+        </section>        
+        <section class="main-section" id="Spacing_and_Grid">
+            <header>Spacing and Grid</header>
+            <p>Consistent spacing creates visual rhythm and breathing room throughout a layout. Most design systems use an 8px base grid, where all spacing values are multiples of 8. This creates a mathematical harmony that is visually satisfying and easy to implement.</p>
+            <p>In architecture, spatial proportion follows similar rules. The golden ratio and modular grids have guided building design for centuries — from the Parthenon to Le Corbusier's Modulor system. Digital grids are the architectural floor plans of the screen.</p>
+            <p>Column grids define how content is arranged horizontally. A 12-column grid is standard for desktop layouts because 12 is divisible by 2, 3, 4, and 6, giving designers maximum flexibility. Mobile layouts typically use a 4-column grid.</p>
+            <p>Spacing tokens should cover the full range from micro spacing used within components to macro spacing used between sections. A clear naming convention — such as xs, sm, md, lg, xl — makes tokens intuitive to apply without memorizing pixel values.</p>
+            <code>--spacing-xs: 4px / --spacing-sm: 8px / --spacing-md: 16px / --spacing-lg: 32px / --spacing-xl: 64px</code>
+            <ul>
+                <li>4px</li>
+                <li>8px</li>
+                <li>16px</li>
+                <li>24px</li>
+                <li>32px</li>
+                <li>48px</li>
+                <li>64px</li>
+                <li>96px</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Components">
+            <header>Components</header>
+            <p>Components are the building blocks of a design system. Each component is designed once and reused consistently across the entire product. This single-source-of-truth approach means that fixing a bug or updating a style in one component propagates the change everywhere it is used.</p>
+            <p>Like architectural details — a window assembly, a stair section, a curtain wall joint — components are documented with specifications, states, and usage guidelines. A button component, for example, must document its default, hover, active, focused, disabled, and loading states.</p>
+            <p>Components exist in a hierarchy. Atoms are the smallest indivisible elements — a color swatch, an icon, a type style. Molecules combine atoms into simple functional units like a search input. Organisms combine molecules into complex interface sections like a navigation bar.</p>
+            <p>Component documentation should include when to use the component, when not to use it, accessibility requirements, content guidelines, and responsive behavior. Incomplete documentation leads to inconsistent implementation regardless of how well the component itself is designed.</p>
+            <code>Button variant="primary" size="md" disabled={false} /</code>
+            <ul>
+                <li>Button</li>
+                <li>Input</li>
+                <li>Card</li>
+                <li>Modal</li>
+                <li>toast</li>
+                <li>Tooltip</li>
+                <li>Dropdown</li>
+                <li>Navigation</li>
+                <li>Table</li>
+                <li>Badge</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Iconography">
+            <header>Iconography</header>
+            <p>Icons are visual symbols that communicate actions, objects, and concepts at a glance. A consistent icon library strengthens the visual language of a product and reduces cognitive load by replacing text labels with universally understood symbols.</p>
+            <p>Icons should follow a unified grid, stroke weight, and corner radius to feel cohesive across the entire system. Most icon systems are drawn on a 24x24px artboard with a 2px stroke weight and consistent padding within the grid.</p>
+            <p>Every icon must have an accessible text label associated with it. An icon used as a button must have an aria-label attribute so screen readers can communicate its purpose to users who cannot see the visual symbol.</p>
+            <p>Icon sets should be delivered as SVG files to ensure sharp rendering at any size. SVG icons can be styled with CSS, allowing color and size to be controlled through design tokens rather than hardcoded values.</p>
+            <code>Icon name="close" size="24" aria-label="Close dialog" /</code>
+            <ul>
+                <li>Action icons</li>
+                <li>Navigation icons</li>
+                <li>Status icons</li>
+                <li>Social icons</li>
+                <li>Utility icons</li>
+                <li>Directional icons</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Elevations_and_Shadow">
+            <header>Elevations and Shadow</header>
+            <p>Elevation communicates hierarchy and depth in a user interface. Elements with higher elevation appear closer to the user and draw more visual attention. Elevation is used to indicate interactive elements, floating panels, modals, and overlays.</p>
+            <p>Shadows are the primary visual cue for elevation. A consistent shadow scale ensures depth feels intentional and systematic rather than arbitrary. Shadows should become larger and more diffuse as elevation increases, mimicking the behavior of light in the physical world.</p>
+            <p>In architecture, elevation and shadow have always been fundamental design tools. The play of light and shadow across a facade communicates depth, materiality, and structural hierarchy. The same principles translate directly to digital surfaces.</p>
+            <p>Elevation tokens should define both the shadow values and the surface colors associated with each level. In Material Design, for example, elevated surfaces in dark mode lighten slightly as elevation increases, providing an additional visual cue beyond shadow alone.</p>
+            <code>--shadow-sm: 0 1px 3px rgba(0,0,0,0.08) / --shadow-md: 0 4px 12px rgba(0,0,0,0.12) / --shadow-lg: 0 8px 24px rgba(0,0,0,0.16)</code>
+            <ul>
+                <li>Level 0 - flat</li>
+                <li>Level 1 - card</li>
+                <li>Level 2 - dropdown</li>
+                <li>Level 3 - modal</li>
+                <li>Level 4 - overlay</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Border_and_Radius">
+            <header>Border and Radius</header>
+            <p>Border styles and corner radii define the personality and character of a design system. Sharp corners feel precise, technical, and authoritative. Rounded corners feel approachable, friendly, and modern. The choice between them is a fundamental brand decision.</p>
+            <p>Consistent border tokens prevent visual inconsistency across components and ensure the system feels unified at every scale. A card, an input field, and a button should all reference the same radius token for their shared corner style.</p>
+            <p>Border width tokens define the weight of dividing lines, input outlines, and focus rings. A consistent border weight hierarchy — from hairline separators to bold focus indicators — communicates structure and hierarchy without relying on color alone.</p>
+            <p>Focus rings are a critical accessibility feature that must be designed intentionally. They should be highly visible, using a combination of color and border width that meets contrast requirements even for users with color vision deficiencies.</p>
+            <code>--radius-sm: 4px / --radius-md: 8px / --radius-lg: 16px / --radius-full: 9999px / --border-width-default: 1px</code>
+            <ul>
+                <li>Raidus extra small</li>
+                <li>Radius small</li>
+                <li>Radius medium</li>
+                <li>Radius large</li>
+                <li>Raidus full</li>
+                <li>Border hairline</li>
+                <li>Border default</li>
+                <li>Border bold</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Motion_and_Animation">
+            <header>Motion and Animation</header>
+            <p>Motion design guides the user's attention, communicates state changes, and makes interfaces feel alive and responsive. Purposeful animation improves usability by providing feedback, maintaining spatial context, and reducing perceived wait times.</p>
+            <p>Animation tokens define duration, easing curves, and delay values so transitions feel consistent across all components and interactions. Without tokens, animation values become scattered and inconsistent, creating a jarring experience as users move through the product.</p>
+            <p>Easing curves determine the character of movement. Ease-out curves — which start fast and slow down — feel natural for elements entering the screen because they mimic how objects in the physical world decelerate as they come to rest. Ease-in curves work for elements leaving the screen.</p>
+            <p>Accessibility requires that animation be optional. Users who have set their operating system to reduce motion must be respected. The prefers-reduced-motion media query allows designers to disable or simplify animations for users who are sensitive to motion.</p>
+            <code>--duration-fast: 150ms / --duration-base: 250ms / --ease-out</code>
+            <ul>
+                <li>Fade</li>
+                <li>Slide</li>
+                <li>Scale</li>
+                <li>Expand</li>
+                <li>Collapse</li>
+                <li>Skeleton loading</li>
+                <li>Page transition</li>
+                <li>Miro-interaction</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Accessibility">
+            <header>Accessibility</header>
+            <p>Accessibility ensures that products are usable by everyone, including people with visual, motor, auditory, and cognitive disabilities. It is not an optional enhancement — it is a fundamental design requirement and a legal obligation in many jurisdictions.</p>
+            <p>Design systems should encode accessibility standards directly into components so that teams build inclusively by default rather than as an afterthought. When accessibility is baked into the system, every team using the system inherits compliant components automatically.</p>
+            <p>Color contrast is one of the most measurable aspects of accessibility. WCAG 2.1 requires a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text against its background. Design tokens should be validated against these requirements at the system level.</p>
+            <p>Keyboard navigation must be fully supported across all interactive components. Users who cannot use a mouse must be able to access every feature through keyboard alone. This requires deliberate focus management, logical tab order, and visible focus indicators.</p>
+            <code>aria-label="Close dialog" role="button" tabindex="0" aria-expanded="false"</code>
+            <ul>
+                <li>Color contrast 4.5:1</li>
+                <li>Keyboard navigation</li>
+                <li>Visible focus states</li>
+                <li>Screen reader support</li>
+                <li>Alt text for images</li>
+                <li>Captions for video</li>
+                <li>Skip navigation links</li>
+                <li>Error identification</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <p>Responsive design ensures that interfaces adapt gracefully to any screen size, from mobile phones to large desktop monitors. A design system defines breakpoints and layout rules for every context, ensuring a consistent experience regardless of device.</p>
+            <p>Like architecture that must function at both the urban scale and the human scale, responsive design requires thinking about the experience at every level of zoom. A navigation component that works beautifully on desktop must degrade gracefully to a hamburger menu on mobile.</p>
+            <p>Breakpoints should be defined as tokens rather than hardcoded values scattered throughout the codebase. This allows the system to respond to changes in device landscape — when new screen sizes emerge, a single token update can cascade through the entire system.</p>
+            <p>Content priority changes at different breakpoints. Information that is visible at all times on desktop may need to be hidden, collapsed, or reorganized on mobile. Responsive design is not just about making things fit — it is about making deliberate decisions about what matters most at each scale.</p>
+            <code>--breakpoint-sm: 480px / --breakpoint-md: 768px / --breakpoint-lg: 1024px / --breakpoint-xl: 1280px</code>
+            <ul>
+                <li>Mobile 320px</li>
+                <li>Moblie 480px</li>
+                <li>Tablet 768px</li>
+                <li>Desktop 1024px</li>
+                <li>Wide 1280px</li>
+                <li>Ultrawide 1440px</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Dark_Mode_Tokens">
+            <header>Dark Mode Tokens</header>
+            <p>Dark mode is no longer an optional feature — it is an expected system behavior. Users increasingly prefer dark interfaces for extended use, and operating systems now expose a system-level preference that applications are expected to respect.</p>
+            <p>Design tokens make dark mode manageable by separating color values from their semantic meaning. Instead of hardcoding a hex value like #ffffff for a background, a semantic token like --color-background references the appropriate value for the current color scheme.</p>
+            <p>A well-structured token system allows a single component to adapt to light and dark contexts without any structural changes to the code. The component references semantic tokens, and the token values are swapped at the theme level when dark mode is activated.</p>
+            <p>Dark mode is not simply inverting colors. Dark backgrounds should use dark grays rather than pure black to avoid harsh contrast. Text on dark surfaces should use off-white rather than pure white. Shadows become less effective in dark mode and should be supplemented with surface color changes to communicate elevation.</p>
+            <code>--color-background: var(--color-neutral-900) / --color-surface: var(--color-neutral-800) / --color-on-surface: var(--color-neutral-100)</code>
+            <ul>
+                <li>Background</li>
+                <li>Surface</li>
+                <li>On-surface text</li>
+                <li>Border subtle</li>
+                <li>Border default</li>
+                <li>Overlay</li>
+                <li>Shadow</li>
+                <li>Interactive states</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Design_Handoff">
+            <header>Design Handoff</header>
+            <p>Design handoff is the process of transferring design specifications to developers for implementation. Poor handoff is one of the most common sources of inconsistency between design intent and final product. A well-documented design system dramatically reduces this friction.</p>
+            <p>Clear handoff documentation includes component specifications, token references, interaction notes, accessibility requirements, and edge cases — everything a developer needs to build accurately without guessing or making assumptions.</p>
+            <p>Modern handoff tools like Figma allow designers to expose token values, spacing measurements, and component properties directly within the design file. When a design system is properly structured in Figma, developers can inspect any element and find the exact token name rather than a raw pixel value.</p>
+            <p>Handoff is not a one-time event — it is an ongoing conversation. Developers frequently encounter edge cases and technical constraints that require design decisions. A healthy handoff process includes regular communication, shared documentation, and a clear process for raising and resolving questions.</p>
+            <code>component: Button / variant: primary / size: md / state: hover / token: --color-primary-hover</code>
+            <ul>
+                <li>Component specifications</li>
+                <li>Token references</li>
+                <li>Interaction notes</li>
+                <li>Accessibility requirements</li>
+                <li>Edge case documentation</li>
+                <li>Animation specifications</li>
+                <li>Responsive behavior</li>
+                <li>Content guidelines</li>
+            </ul>
+        </section>
+    </main>
+  </body>
+</html>
